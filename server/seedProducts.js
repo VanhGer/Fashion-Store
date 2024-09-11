@@ -1,5 +1,5 @@
 const connectDB = require("./config/connectDB")
-const products = require("./data/products")
+const products = require("./data/products_2")
 const Product = require('./models/product')
 const User = require('./models/user')
 
