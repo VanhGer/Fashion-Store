@@ -20,7 +20,7 @@ const AdminNav = ({ toggle, click, logout }) => {
         <nav className={`admin_nav ${toggle && 'show'}`}>
             <div className="container">
                 <div className="logo">
-                    <h2>G-store</h2>
+                    <h2>Boo2nd</h2>
                     <button onClick={click}><MenuOpenOutlinedIcon /></button>
                 </div>
                 <div className="links">

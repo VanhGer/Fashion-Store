@@ -54,7 +54,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 94
+        "condition": 94
     },
     {
         "name": "Triple-s Track",
@@ -93,7 +93,7 @@ const products = [
                 "count": 0
             }
         ],
-        "con": 87
+        "condition": 87
     },
     {
         "name": "Vicose Shirt",
@@ -131,7 +131,7 @@ const products = [
                 "count": 2
             }
         ],
-        "con": 82
+        "condition": 82
     },
     {
         "name": "Triple-s Fake fur",
@@ -174,7 +174,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 81
+        "condition": 81
     },
     {
         "name": "Pro Warm Long Sleeve",
@@ -219,7 +219,7 @@ const products = [
                 "count": 2
             }
         ],
-        "con": 98
+        "condition": 98
     },
     {
         "name": "Air Zoom Pegasus 38 Shield",
@@ -264,7 +264,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 84
+        "condition": 84
     },
     {
         "name": "Air Zoom Pegasus 38 Shield White",
@@ -325,7 +325,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 87
+        "condition": 87
     },
     {
         "name": "Dri-FIT Run Division Fast",
@@ -367,7 +367,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 85
+        "condition": 85
     },
     {
         "name": "Womens Mid-rise printed leggings",
@@ -406,7 +406,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 87
+        "condition": 87
     },
     {
         "name": "Jordan Jumpman Sports Bra",
@@ -445,7 +445,7 @@ const products = [
                 "count": 2
             }
         ],
-        "con": 96
+        "condition": 96
     },
     {
         "name": "Air Max 95",
@@ -490,7 +490,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 91
+        "condition": 91
     },
     {
         "name": "Jordan MA2",
@@ -538,7 +538,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 93
+        "condition": 93
     },
     {
         "name": "Jordan Max Aura 3",
@@ -583,7 +583,7 @@ const products = [
                 "count": 2
             }
         ],
-        "con": 97
+        "condition": 97
     },
     {
         "name": "Party dress cloak sleeve",
@@ -628,7 +628,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 82
+        "condition": 82
     },
     {
         "name": "Polka Dot mesh sleeve",
@@ -673,7 +673,7 @@ const products = [
                 "count": 2
             }
         ],
-        "con": 84
+        "condition": 84
     },
     {
         "name": "Printed flower dress",
@@ -718,7 +718,7 @@ const products = [
                 "count": 1
             }
         ],
-        "con": 92
+        "condition": 92
     },
     {
         "name": "Slim Sexy white gown",
@@ -766,7 +766,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 83
+        "condition": 83
     },
     {
         "name": "Long sleeve wide leg jumpsuit",
@@ -811,7 +811,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 86
+        "condition": 86
     },
     {
         "name": "Slim patterned party gown",
@@ -856,7 +856,7 @@ const products = [
                 "count": 1
             }
         ],
-        "con": 95
+        "condition": 95
     },
     {
         "name": "Mens Casual Short sleeve",
@@ -894,7 +894,7 @@ const products = [
                 "count": 2
             }
         ],
-        "con": 94
+        "condition": 94
     },
     {
         "name": "Vintage casual shirt",
@@ -936,7 +936,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 97
+        "condition": 97
     },
     {
         "name": "Crease-resistant regular-fit black shirt",
@@ -975,7 +975,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 99
+        "condition": 99
     },
     {
         "name": "Regular-fit stretch cotton white shirt",
@@ -1014,7 +1014,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 84
+        "condition": 84
     },
     {
         "name": "Regular-fit cotton chambray blue shirt",
@@ -1053,7 +1053,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 83
+        "condition": 83
     },
     {
         "name": "Jordan flight heritage parka",
@@ -1098,7 +1098,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 88
+        "condition": 88
     },
     {
         "name": "Fleece essential",
@@ -1139,7 +1139,7 @@ const products = [
                 "count": 2
             }
         ],
-        "con": 90
+        "condition": 90
     },
     {
         "name": "Rugged street joggers",
@@ -1177,7 +1177,7 @@ const products = [
                 "count": 5
             }
         ],
-        "con": 97
+        "condition": 97
     },
     {
         "name": "Jet black chic joggers",
@@ -1218,7 +1218,7 @@ const products = [
                 "count": 3
             }
         ],
-        "con": 80
+        "condition": 80
     }
 ];
 

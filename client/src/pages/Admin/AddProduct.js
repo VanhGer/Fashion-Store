@@ -44,6 +44,7 @@ const AddProduct = ({ type }) => {
     // Add Product States
     const [name, setName] = useState("")
     const [brand, setBrand] = useState("")
+    const [condition, setCondition] = useState("")
     const [price, setPrice] = useState("")
     const [sizes, setSizes] = useState("")
     const [gender, setGender] = useState("")
@@ -56,6 +57,7 @@ const AddProduct = ({ type }) => {
     // Edit Product States
     const [editName, setEditName] = useState('')
     const [editBrand, setEditBrand] = useState('')
+    const [editCondition, setEditCondition] = useState('')
     const [editPrice, setEditPrice] = useState(0)
     const [editSizes, setEditSizes] = useState([])
     const [editGender, setEditGender] = useState('')
@@ -129,6 +131,7 @@ const AddProduct = ({ type }) => {
                 formData.append('name', name)
                 formData.append('description', description)
                 formData.append('brand', brand)
+                formData.append('cond', condition)
                 formData.append('price', price)
                 formData.append('sizes', sizes)
                 formData.append('gender', gender)
@@ -159,6 +162,7 @@ const AddProduct = ({ type }) => {
             editFormData.append('name', editName)
             editFormData.append('description', editDescription)
             editFormData.append('brand', editBrand)
+            editFormData.append('con', editCondition)
             editFormData.append('price', editPrice)
             editFormData.append('sizes', editSizes)
             editFormData.append('gender', editGender)
@@ -216,6 +220,7 @@ const AddProduct = ({ type }) => {
             setEditDetails(formattedDetails)
             setEditPrice(productDetails.product?.price)
             setEditBrand(productDetails.product?.brand)
+            setEditCondition(productDetails.product?.condition)
             setEditGender(productDetails.product?.gender)
             setEditCategory(productDetails.product?.category)
             setEditSizes(formattedSizes)
@@ -331,6 +336,17 @@ const AddProduct = ({ type }) => {
                                         variant="outlined" 
                                         value={brand}
                                         onChange={(e) => setBrand(e.target.value)}
+                                    />
+                                </Grid>
+                                <Grid item xs={12} sm={6}>
+                                    <TextField
+                                        fullWidth 
+                                        required
+                                        size="small"
+                                        label="Condition" 
+                                        variant="outlined" 
+                                        value={condition}
+                                        onChange={(e) => setCondition(e.target.value)}
                                     />
                                 </Grid>
                                 <Grid item xs={12} sm={6}>
@@ -457,6 +473,17 @@ const AddProduct = ({ type }) => {
                                         variant="outlined" 
                                         value={editBrand}
                                         onChange={(e) => setEditBrand(e.target.value)}
+                                    />
+                                </Grid>
+                                <Grid item xs={12} sm={6}>
+                                    <TextField
+                                        fullWidth 
+                                        required
+                                        size="small"
+                                        label="Condiion" 
+                                        variant="outlined" 
+                                        value={editCondition}
+                                        onChange={(e) => setEditCondition(e.target.value)}
                                     />
                                 </Grid>
                                 <Grid item xs={12} sm={6}>

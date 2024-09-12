@@ -7,9 +7,13 @@ const productSchema = new Schema({
         trim: true,
         required: [true, "Please enter a name"]
     },
-    brand: {
+    // brand: {
+    //     type: String,
+    //     required: [true, "please specify the brand"]
+    // },
+    condition: {
         type: String,
-        required: [true, "please specify the brand"]
+        required: [true, "please specify the condition"]
     },
     category: {
         type: String,

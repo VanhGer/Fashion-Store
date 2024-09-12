@@ -13,10 +13,11 @@ const Jumbotron = () => {
                             <img src="https://res.cloudinary.com/hopetomiwa/image/upload/v1643146074/Store/Gown_black_remove_qghjoh.png" alt="Slim patterned party gown" />
                         </div>
                         <div className="jumbo_info jumbo_dresses_info">
-                            <h2>Dresses</h2>
-                            <h1><span>High Fashion</span> patterned party gown</h1>
-                            <p>We are majoring in women party dress, skirts, tops, suit and jumpsuits for may years. 100% good quality guarantee at a reasonable price.</p>
-                            <Link to="/category/dresses">Shop Now</Link>
+                        <h2>Váy Secondhand</h2>
+                        <h1><span>Thời Trang Cao Cấp</span></h1>
+                        <p>Chúng tôi chuyên cung cấp các loại váy dự tiệc, chân váy, áo, vest và jumpsuit nữ đã qua sử dụng với chất lượng tốt. 
+                            Cam kết mang đến sản phẩm chất lượng tốt với mức giá hợp lý.</p>
+                        <Link to="/category/dresses">Mua Ngay</Link>
                         </div>
                     </div>
                     <div className="jumbo_grid_item jumbo_sneakers">
@@ -24,10 +25,10 @@ const Jumbotron = () => {
                             <img src="https://res.cloudinary.com/hopetomiwa/image/upload/v1643146075/Store/jordan-ma2-remove_wuxkkc.png" alt="Jordan's MA2" />
                         </div>
                         <div className="jumbo_info jumbo_sneakers_info">
-                            <h2>Sneakers</h2>
-                            <h1><span>Comfy</span> top quality sneakers</h1>
-                            <p>Shatter the sneaker status quo in the Jordan MA2. Made from a mix of suede, full-grain leather and a variety of textiles.</p>
-                            <Link to="/category/sneakers">Shop Now</Link>
+                        <h2>Giày Thể Thao Secondhand</h2>
+                            <h1><span>Thoải Mái</span></h1>
+                            <p>Phá vỡ chuẩn mực với đôi giày chất lượng tốt và giá cả phải chăng. Được làm từ sự kết hợp giữa nhiều loại vải khác nhau.</p>
+                            <Link to="/category/sneakers">Mua Ngay</Link>
                         </div>
                     </div>
                     <div className="jumbo_grid_item jumbo_shirts">
@@ -35,10 +36,10 @@ const Jumbotron = () => {
                             <img src="https://res.cloudinary.com/hopetomiwa/image/upload/v1643140972/Store/Vintage-removebg_p4bwdv.png" alt="Vintage Shirt" />
                         </div>
                         <div className="jumbo_info jumbo_shirts_info">
-                            <h2>Shirts</h2>
-                            <h1><span>Dapper</span> stylish vintage shirts</h1>
-                            <p>Are you a fashionista?Do you like to make statements?Do you like being unique and exclusive? Stress not, this shirt has everything you need and more</p>
-                            <Link to="/category/shirts">Shop Now</Link>
+                        <h2>Áo Secondhand</h2>
+    <h1><span>Phong Cách</span></h1>
+    <p>Bạn là một tín đồ thời trang? Bạn thích tạo dấu ấn riêng? Đừng lo lắng, chiếc áo này có tất cả những gì bạn cần và hơn thế nữa.</p>
+    <Link to="/category/shirts">Mua Ngay</Link>
                         </div>
                     </div>
                 </div>

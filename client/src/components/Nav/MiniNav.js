@@ -11,22 +11,21 @@ const MiniNav = () => {
         <div className='mini_nav'>
             <div className="container mini_container">
                 <div className="mini_logo">
-                    <Link to="/"><h2>Chavonn</h2></Link>
+                    <Link to="/"><h2>Boo2nd</h2></Link>
                 </div>
                 <div className="mini_contact">
                     <div className='mini-phone'>
                         <LocalPhoneOutlinedIcon />
-                        <a href="tel:+2348166179988">+23408166179988</a>
+                        <a href="tel:+84936303632">+84936303632</a>
                     </div>
 
                     <div>
                         <EmailOutlinedIcon />
-                        <a href="mailto:hopetomiwa13@gmail.com">hopetomiwa13@gmail.com</a>
+                        <a href="mailto:online@boo.vn">online@boo.vn</a>
                     </div>
                 </div>
                 <div className="mini_links">
                     <Link to="/">Terms</Link>
-                    <Link to="/">FAQ</Link>
                     <Link to="/">FAQ</Link>
               </div>
             </div>

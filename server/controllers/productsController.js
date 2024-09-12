@@ -99,7 +99,8 @@ const getProduct = asyncHandler(async (req, res) => {
     const product = await Product.findById(id)
 
     const categoryProducts = await Product.find({category: product.category}).limit(6)
-    const brandProducts = await Product.find({brand: product.brand}).limit(6)
+    // const brandProducts = await Product.find({brand: product.brand}).limit(6)
+    const conditionProducts = await Product.find({condition: product.condition}).limit(6)
 
     if(!product) {
         res.status(404)
@@ -107,7 +108,8 @@ const getProduct = asyncHandler(async (req, res) => {
     } else {
         res.json({
             product,
-            brandProducts,
+            // brandProducts,
+            conditionProducts,
             categoryProducts
         })
     }
@@ -190,6 +192,7 @@ const createProduct = asyncHandler(async (req, res) => {
         category: data.category,
         description: data.description,
         brand: data.brand,
+        condition: data.condition,
         gender: data.gender,
         images: images,
         price: data.price,

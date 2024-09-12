@@ -7,11 +7,10 @@ const Footer = () => {
       <footer className='footer'>
         <div className="footer_container">
             <div className="footer_about">
-                <Link to="/"><h2>Chavonn</h2></Link>
+                <Link to="/"><h2>Boo2nd</h2></Link>
                 <p>
-                    We are a brand focused on bringing the best and only the best of premium and high end fashion items to your doorstep.
-                    Browse through different categories of products to find the one that best suit your taste.
-                    Whatever you want, we got it.
+                BOO (Bò Sữa) là thương hiệu thời trang nổi tiếng được giới trẻ Việt Nam ưa thích, bởi sản phẩm không đơn thuần đẹp, 
+                phong cách mà còn phần nào thể hiện được tinh thần của thanh niên Việt Nam.
                 </p>
             </div>
             <div className="footer_categories">
@@ -42,15 +41,15 @@ const Footer = () => {
                 <div className="footer_contact_methods">
                     <div className="contact_method">
                         <span>A.</span>
-                        <p>No 15, Bodija Estate, New Bodija, Ibadan, Nigeria</p>
+                        <p>19A Đặng Trần Côn, P.Quốc Tử Giám, Q.Đống Đa, Tp.Hà Nội, Việt Nam.</p>
                     </div>
                     <div className="contact_method">
                         <span>E.</span>
-                        <p><a href="mailto:hopetomiwa13@gmail.com">hopetomiwa13@gmail.com</a></p>
+                        <p><a href="mailto:online@boo.vn">online@boo.vn</a></p>
                     </div>
                     <div className="contact_method">
                         <span>T.</span>
-                        <p><a href="tel:+2348166179988">+234-0816-617-9988</a></p>
+                        <p><a href="tel:+84936303632">+84093 630 36 32</a></p>
                     </div>
                 </div>
             </div>

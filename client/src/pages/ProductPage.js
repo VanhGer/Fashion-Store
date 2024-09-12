@@ -79,10 +79,10 @@ const ProductPage = () => {
 
     const { productDetails, loading, error } = useSelector(state => state.productDetails)
     const { cartItems } = useSelector((state) => state.cart)
-    let { product, brandProducts, categoryProducts } = productDetails
+    let { product, conditionProducts, categoryProducts } = productDetails
 
-    if (brandProducts) {
-        brandProducts = brandProducts.filter((item) => item._id !== product._id)
+    if (conditionProducts) {
+        conditionProducts = conditionProducts.filter((item) => item._id !== product._id)
         categoryProducts = categoryProducts.filter((item) => item._id !== product._id)
     }
 
@@ -143,7 +143,7 @@ const ProductPage = () => {
                             </div>
                             <div className="product_title">
                                 <h1 className="product_name">{product?.name}</h1>
-                                <div className='product_title_double'><h4>Brand:</h4> <h2>{product?.brand}</h2></div>
+                                <div className='product_title_double'><h4>Condition:</h4> <h2>{product?.condition}%</h2></div>
                                 <div className='product_title_double'><h4>Ratings:</h4> <Ratings value={product?.ratings} /></div>
                                 <h2 className='price'>₦{product?.price}</h2>
 
@@ -223,7 +223,7 @@ const ProductPage = () => {
                                 </Box>
                             </div>
                     </div>
-                    {brandProducts?.length > 0 && 
+                    {/* {brandProducts?.length > 0 && 
                         (
                             <div className="related_items">
                                 <h2>More from {product?.brand}</h2>
@@ -232,7 +232,7 @@ const ProductPage = () => {
                                 </div>
                             </div>
                         )
-                    }
+                    } */}
                     {categoryProducts?.length > 0 && 
                         (
                             <div className="related_items">
