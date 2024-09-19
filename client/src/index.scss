@@ -1,4 +1,17 @@
 @import './styles/Pallette.scss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ul li {
+  /* Bullet color */
+  color: black;
+  list-style-type: disc;
+}
+
+.markdown > * {
+  all: revert;
+}
 
 * {
   box-sizing: border-box;

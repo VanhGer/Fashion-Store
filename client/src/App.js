@@ -13,7 +13,8 @@ import Home from './pages/Home'
 import ProductPage from './pages/ProductPage'
 import Cart from './pages/Cart'
 import Products from './pages/Products'
-
+import Chatbot from './components/Chatbot'
+import { ConfigProvider } from 'antd';
 
 import "./App.css";
 
@@ -36,37 +37,48 @@ const NotFound = React.lazy(() => import('./pages/NotFound'))
 
 function App() {
     return (
-        <Router>
-            <div className="App">
-                <ScrollToTop>
-                    <React.Suspense fallback={<Loader />}>
-                    <Switch>
-                        <Route path="/signin" component={Signin} /> 
-                        <Route path="/forgot-password" component={ForgotPassword} />
-                        <Route path="/reset-password" component={ResetPassword} />
-                        <Route path="/product/:id" component={ProductPage} />
-                        <Route path="/products/page/:pageNumber" component={Products} />
-                        <Route path="/products" component={Products} />
-                        <Route path="/search/:keyword" component={Products} />
-                        <Route path="/search/:keyword/page/:pageNumber" component={Products} />
-                        <Route path="/cart" component={Cart} />
-                        <PrivateRoute path="/account" component={Account} />
-                        <PrivateRoute exact path="/checkout" component={Shipping} />
-                        <PrivateRoute path="/checkout/review" component={OrderReview} />
-                        <PrivateRoute path='/checkout/payment' component={Payment} />
-                        <AdminRoute path="/admin" component={AdminPage} />
-                        <Route path="/category/:category/page/:pageNumber" component={CategoryProducts} />
-                        <Route path="/category/:category" component={CategoryProducts} />
-                        <Route path="/gender/:gender/page/:pageNumber" component={GenderProducts} />
-                        <Route path="/gender/:gender" component={GenderProducts} />
-                        <Route path="/404" component={NotFound} />
-                        <Route exact path="/" component={Home} /> 
-                        <Route path="/*"> <Redirect from="/" to="/404" /> </Route>
-                    </Switch>
-                </React.Suspense>
-                </ScrollToTop>
-            </div>
-        </Router>
+        <ConfigProvider
+            theme={{
+                token: {
+                    // fontFamily: "Rubik",
+                    // borderRadiusLG: 15
+                },
+            }}
+        >
+
+            <Router>
+                <div className="App">
+                    <ScrollToTop>
+                        <React.Suspense fallback={<Loader />}>
+                            <Switch>
+                                <Route path="/signin" component={Signin} />
+                                <Route path="/forgot-password" component={ForgotPassword} />
+                                <Route path="/reset-password" component={ResetPassword} />
+                                <Route path="/product/:id" component={ProductPage} />
+                                <Route path="/products/page/:pageNumber" component={Products} />
+                                <Route path="/products" component={Products} />
+                                <Route path="/search/:keyword" component={Products} />
+                                <Route path="/search/:keyword/page/:pageNumber" component={Products} />
+                                <Route path="/cart" component={Cart} />
+                                <PrivateRoute path="/account" component={Account} />
+                                <PrivateRoute exact path="/checkout" component={Shipping} />
+                                <PrivateRoute path="/checkout/review" component={OrderReview} />
+                                <PrivateRoute path='/checkout/payment' component={Payment} />
+                                <AdminRoute path="/admin" component={AdminPage} />
+                                <Route path="/category/:category/page/:pageNumber" component={CategoryProducts} />
+                                <Route path="/category/:category" component={CategoryProducts} />
+                                <Route path="/gender/:gender/page/:pageNumber" component={GenderProducts} />
+                                <Route path="/gender/:gender" component={GenderProducts} />
+                                <Route path="/404" component={NotFound} />
+                                <Route exact path="/" component={Home} />
+                                <Route path="/*"> <Redirect from="/" to="/404" /> </Route>
+                            </Switch>
+                        </React.Suspense>
+                    </ScrollToTop>
+                    <Chatbot />
+                </div>
+            </Router>
+        </ConfigProvider>
     )
 }
 
