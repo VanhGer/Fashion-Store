@@ -47,7 +47,7 @@ const UserOrder = ({ click }) => {
         <div className="order_container">
             <div className="order_header">
               <div className="order_title">
-                <button onClick={() => history.goBack()}> 
+                <button onClick={() => history.goBack()}>
                   <ArrowBackOutlinedIcon />
                 </button>
                 <h1>Order Details</h1>
@@ -126,7 +126,7 @@ const UserOrder = ({ click }) => {
                 <div className="order_payment_info">
                   <div className="method">
                     <h2>Payment Method</h2>
-                    <h3>Paystack</h3>
+                    <h3>Cash on Delivery</h3>
                   </div>
                   <div className="details">
                     <h3>Payment Details</h3>

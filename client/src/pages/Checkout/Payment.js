@@ -1,8 +1,8 @@
-import { PaystackButton } from 'react-paystack'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect, useState } from 'react'
 import { useHistory, Link } from 'react-router-dom'
 import { useAlert } from 'react-alert'
+import { v4 as uuidv4 } from 'uuid';
 
 // REDUX ACTIONS
 import { createOrder, getPaymentKey } from '../../redux/actions/orderActions'
@@ -37,7 +37,7 @@ const Payment = () => {
 
     const address = JSON.parse(sessionStorage.getItem('shippingAddress'))
     const { main, ...shippingAddress } = address
-    
+
     /* Calculate the price before and after shipping fees */
 
     const totalItems = () => {
@@ -76,7 +76,7 @@ const Payment = () => {
         orderDetails.paymentStatus = {
             id: response.reference,
             status: response.status
-        }  
+        }
         setLoading(true)
         dispatch(createOrder(orderDetails))
         setLoading(false)
@@ -96,7 +96,7 @@ const Payment = () => {
             handlePayment(response)
         },
         onClose: () => {
-            alert.show("Why na, you wan collect")          
+            alert.show("Why na, you wan collect")
         },
     }
 
@@ -131,7 +131,7 @@ const Payment = () => {
                         <div className="shipping_details">
                             <AddressCard address={address} type='payment' />
                         </div>
-                        
+
                         <div className="order_details">
                             <h2>Order Summary</h2>
                             <div className="order_details_header">
@@ -175,13 +175,23 @@ const Payment = () => {
                                 <h2>Total Price</h2>
                                 <h3>₦{totalPrice()}</h3>
                             </div>
+                            <div className="order_summary_item">
+                                <h2>Payment method</h2>
+                                <h3>Cash on Delivery</h3>
+                            </div>
                             <Grid container rowSpacing={2} columnSpacing={6} sx={{ mt: 1, '& button': { width: "100%" } }} >
                                 <Grid item xs={12} sm={6} md={12}>
                                     <Button size="large" variant="outlined"><Link to="/checkout/review">Back</Link></Button>
                                 </Grid>
                                 <Grid item xs={12} sm={6} md={12}>
-                                    <PaystackButton className="pay_btn" {...componentProps} /> 
-                                </Grid>    
+                                    {/* <PaystackButton className="pay_btn" {...componentProps} />  */}
+                                    <button className='pay_btn' onClick={() => handlePayment({
+                                        reference: uuidv4(),
+                                        status: 'success'
+                                    })}>
+                                        Confirm
+                                    </button>
+                                </Grid>
                             </Grid>
                         </div>
                     </section>
